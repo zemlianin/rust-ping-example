@@ -21,7 +21,7 @@ use futures::prelude::*;
 use libp2p::core::upgrade::Version;
 use libp2p::{
     identity, noise, ping,
-    swarm::{keepAlive, NetworkBehaviour, SwarmBuilder, SwarmEvent},
+    swarm::{keep_alive, NetworkBehaviour, SwarmBuilder, SwarmEvent},
     tcp, yamux, Multiaddr, PeerId, Transport,
 };
 
