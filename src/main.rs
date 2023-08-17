@@ -17,16 +17,14 @@
 // LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 // FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 // DEALINGS IN THE SOFTWARE.
-
-#![doc = include_str!("../README.md")]
-
 use futures::prelude::*;
 use libp2p::core::upgrade::Version;
 use libp2p::{
     identity, noise, ping,
-    swarm::{keep_alive, NetworkBehaviour, SwarmBuilder, SwarmEvent},
+    swarm::{keepAlive, NetworkBehaviour, SwarmBuilder, SwarmEvent},
     tcp, yamux, Multiaddr, PeerId, Transport,
 };
+
 use std::error::Error;
 
 #[async_std::main]
