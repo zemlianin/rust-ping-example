@@ -9,4 +9,4 @@ license = "MIT"
 async-std = { version = "1.12", features = ["attributes"] }
 async-trait = "0.1"
 futures = "0.3.28"
-libp2p = { version = "0.39", features = ["async-std", "dns", "macros", "noise", "ping", "tcp", "websocket", "yamux"]}
+libp2p = { version = "0.51", features = ["async-std", "dns", "macros", "noise", "ping", "tcp", "websocket", "yamux"]}
